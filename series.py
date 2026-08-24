@@ -4,7 +4,7 @@
 # --- Student Assignment --- #
 # --- Boas --- #
 # Harmonic Series
-def harmonic(n):
+def harmonic(n_terms):
     """Compute the sum of the first n terms of the harmonic series."""
     raise NotImplementedError("Student assignment not yet implemented.")
 
@@ -22,7 +22,7 @@ def boas_1_13_22(x):
 
 
 # Plots the first N terms of the series expansion of exp(x)/(1 - x)
-def boas_1_13_22_plot(x, N):
+def boas_1_13_22_plot(x, n_terms):
     """Plot the first N terms of the series expansion of exp(x)/(1 - x)
 
     This function generates a plot similar to the one in Boas, Figure 1.13.1
