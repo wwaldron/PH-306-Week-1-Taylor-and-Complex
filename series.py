@@ -10,19 +10,19 @@ def harmonic(n_terms):
 
 
 # Boas, 3rd Edition, Equation 1.13.4
-def boas_1_13_4(x: float) -> float:
+def boas_1_13_4(x: float, rel_tol: float = 1e-8, max_iter: int = 100) -> float:
     """Compute the series of ln(1 + x)"""
     raise NotImplementedError("Student assignment not yet implemented.")
 
 
 # Boas, Problem 1.13.22
-def boas_1_13_22(x):
+def boas_1_13_22(x, rel_tol, max_iter):
     """Compute the sum of the series exp(x)/(1 - x)"""
     raise NotImplementedError("Student assignment not yet implemented.")
 
 
 # Plots the first N terms of the series expansion of exp(x)/(1 - x)
-def boas_1_13_22_plot(x, n_terms):
+def boas_1_13_22_plot(n_terms):
     """Plot the first N terms of the series expansion of exp(x)/(1 - x)
 
     This function generates a plot similar to the one in Boas, Figure 1.13.1
