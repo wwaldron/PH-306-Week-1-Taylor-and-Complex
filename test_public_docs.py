@@ -1,13 +1,20 @@
 import pytest
 from numpydoc.validate import validate
 
-import assignment
+import series, complex
 
 
 DOCSTRING_TARGETS = [
-    # Add Functions for Docstring Feedback here
-    # For example:
-    # assignment.distance_traveled
+    series.boas_1_13_22,
+    series.boas_1_13_22_plot,
+    series.boas_1_13_4,
+    series.boas_1_16_1c,
+    series.cos_apprx,
+    series.harmonic,
+    complex.complex_impedance,
+    complex.complex_polar,
+    complex.nth_root,
+    complex.plot_rlc
 ]
 
 DOCSTRING_CHECKS = {
