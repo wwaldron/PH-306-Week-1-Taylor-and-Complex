@@ -1,22 +1,69 @@
-# PH306 Assignment Template (Notebook + Script Grading)
+# PH 306 Assignment: Taylor Series and Complex Numbers
 
-This template is designed to create specific assignment templates for PH 306 using [CodeGrade](https://www.codegrade.com/).
+This assignment has two coding parts:
 
-- The Python files `assignment.ipynb` & `assignment.py` serve as example CodeGrade assignments.
-- To create a new assignment, create a new repository based on this template then [set up that new repository as a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository).
+1. Infinite/Taylor series methods in `series.py`
+2. Complex-number methods in `complex.py`
 
-## Files
+Implement the required functions in those two files. **Do not rename files or functions.**
 
-- `assignment.ipynb`: example notebook assignment
-- `assignment.py`: example script assignment
-- `tests/test_public.py`: visible tests used by CodeGrade autograder
+## Files You Should Edit
 
-## Student workflow
+- `series.py`
+- `complex.py`
 
-1. Open the assignment script or notebook.
-1. Commit and push.
-1. Review autograding results in CodeGrade.
+### Required Functions
 
-## Devcontainer environment
+Implement all stubs currently raising `NotImplementedError`.
 
-The provided `.devcontainer/devcontainer.json` and `.devcontainer/Dockerfile` uses a Micromamba image and creates a new environment with `mamba` from `environment.yml` (using `conda-forge` and `astropy`). This is primarily used for students who prefer to develop in [GitHub Codespaces](https://github.com/features/codespaces).
+#### In `series.py`
+
+- `harmonic`: Implements the harmonic series up to $N$ terms.
+- `boas_1_13_4`: Implements $\ln(1+x)$ as a Taylor Series with a stopping criteria.
+- `boas_1_13_22`: Implements $\exp(x)/(1 - x)$ as a Taylor Series with a stopping criteria.
+- `boas_1_13_22_plot`
+  - Implements $f(x) = \exp(x)/(1 - x)$ as a Maclaurin Series up to a fixed number of terms $N$.
+  - Plots the function $f(x)$ for $-5 < x < 5$ in black
+  - Plots the $N$ Maclaurin approximations or $f(x)$ using Matplotlib colors `C0, C1, ..., C<N-1>`.
+  - Example/Comparison plot can be found on Canvas
+- `boas_1_16_1c`: Determines the number of books needed to get the necessary book-lengths of overhang. (See Boas 1.16.1c)
+- `cos_apprx`
+  - Approximate $\cos$ (instead of $\sin$)
+  - From Landau 3.3.1
+  - Do Parts 1 and 7
+
+#### In `complex.py`
+
+- `complex_polar`: Converts a complex number $z = x+iy$ to polar form as a tuple $z = (r, \theta)$.
+- `nth_root`: Returns the $n$ roots of $z$ as a tuple ($z_1 = \sqrt[n]{z_0}$)
+- `complex_impedance`: Calculates the complex impedance of a driven series RLC circuit (see Boas Equation 2.16.15)
+- `plot_rlc`
+  - Should plot the current and voltage using complex analysis.
+  - Should plot and return the imaginary part of the current/voltage.
+  - Should be `astropy` quantity-friendly.
+  - Should plot over six (current, not necessarily voltage) periods.
+  - Example/comparison plot on Canvas.
+
+## Current Libraries
+
+The currently guaranteed scientific libraries in CodeGrade are:
+
+- `pandas`
+- `numpy`
+- `scipy`
+- `astropy`
+- `matplotlib`
+
+## Local Validation Only
+
+Run the visible tests before submitting:
+
+```bash
+pytest
+```
+
+Optional style/type checks may be run by course tooling:
+
+```bash
+bash test_codegrade_mypy.sh
+```
