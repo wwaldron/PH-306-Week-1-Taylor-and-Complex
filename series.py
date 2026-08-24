@@ -3,68 +3,56 @@
 Complete the TODOs in this file.
 """
 
-# --- Imports --- #
-# Numerical Imports
-import numpy as np
-
 
 # --- Student Assignment --- #
-# Problem 1
-def problem1_array_operations() -> tuple[np.ndarray, np.ndarray]:
-    """Return x and y for Problem 1.
+# --- Boas --- #
+# Harmonic Series
+def harmonic(n):
+    """Compute the sum of the first n terms of the harmonic series."""
+    raise NotImplementedError("Student assignment not yet implemented.")
 
-    - x: 100 evenly spaced values from 0 to 2*pi (inclusive)
-    - y: sin(x)
+
+# Boas, 3rd Edition, Equation 1.13.4
+def boas_1_13_4(x: float) -> float:
+    """Compute the series of ln(1 + x)"""
+    raise NotImplementedError("Student assignment not yet implemented.")
+
+
+# Boas, Problem 1.13.22
+def boas_1_13_22(x):
+    """Compute the sum of the series exp(x)/(1 - x)"""
+    raise NotImplementedError("Student assignment not yet implemented.")
+
+
+# Plots the first N terms of the series expansion of exp(x)/(1 - x)
+def boas_1_13_22_plot(x, N):
+    """Plot the first N terms of the series expansion of exp(x)/(1 - x)
+
+    This function generates a plot similar to the one in Boas, Figure 1.13.1
+    (but with all N approximations on a single plot).
+
     """
-    raise NotImplementedError("Implement problem1_array_operations")
+    raise NotImplementedError("Student assignment not yet implemented.")
 
 
-# Problem 2
-def problem2_numerical_integration() -> tuple[float, float]:
-    """Return (result, error) for integral of exp(-x^2) from -inf to +inf."""
-    raise NotImplementedError("Implement problem2_numerical_integration")
+# Boas, Problem 1.16.1c
+def boas_1_16_1c(n_books_overhang):
+    """Compute how many books can be stacked on a table with a given overhang."""
+    raise NotImplementedError("Student assignment not yet implemented.")
 
 
-# --- Public Checks --- #
-def problem1_check() -> None:
-    """Check Problem 1 implementation."""
-    x, y = problem1_array_operations()
-    assert isinstance(x, np.ndarray), "x is not a numpy array"
-    assert isinstance(y, np.ndarray), "y is not a numpy array"
-    assert x.shape == (100,), "x does not have shape (100,)"
-    assert y.shape == (100,), "y does not have shape (100,)"
-    assert np.allclose(y[0], 0), "y[0] is not close to 0"
-    assert np.allclose(y[-1], 0), "y[-1] is not close to 0"
 
-def problem2_check() -> None:
-    """Check Problem 2 implementation."""
-    result, error = problem2_numerical_integration()
-    assert isinstance(result, float), "result is not a float"
-    assert isinstance(error, float), "error is not a float"
-    assert np.isclose(result, np.sqrt(np.pi)), "result is not close to sqrt(pi)"
-    assert error < 1e-6, "error is not less than 1e-6"
+# --- Landau --- #
+# The following questions are from Landau 3.3.1
+# HOWEVER, these should be completed with cos instead of sin
+def cos_apprx(x, rel_tol=1e-8, max_iter=100):
+    """Compute the approximation of cos(x) using the Taylor series expansion.
 
+    This function computes the Taylor series of cos(x) until the series converges
+    or maximum number of iterations is reached. The function returns the approximation
+    of cos(x) and the number of iterations used to compute the approximation and makes
+    use of the identity cos(x) = cos(x + 2*pi*n) for any integer n to reduce the input
+    x to the range [0, 2*pi].
 
-# --- Main --- #
-if __name__ == "__main__":
-    # Run checks for Problem 1
-    try:
-        problem1_check()
-        print("Problem 1 passed all checks.")
-    except AssertionError as e:
-        print(f"Problem 1 failed: {e}")
-        raise
-    except NotImplementedError as e:
-        print(f"Problem 1 not yet implemented: {e}")
-        raise
-
-    # Run checks for Problem 2
-    try:
-        problem2_check()
-        print("Problem 2 passed all checks.")
-    except AssertionError as e:
-        print(f"Problem 2 failed: {e}")
-        raise
-    except NotImplementedError as e:
-        print(f"Problem 2 not yet implemented: {e}")
-        raise
+    """
+    raise NotImplementedError("Student assignment not yet implemented.")
