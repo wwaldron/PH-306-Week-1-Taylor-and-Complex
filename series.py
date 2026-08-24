@@ -1,7 +1,4 @@
-"""Student assignment implementation file.
-
-Complete the TODOs in this file.
-"""
+"""Student assignment implementation file for Infinite Series and Taylor Series expansions."""
 
 
 # --- Student Assignment --- #
