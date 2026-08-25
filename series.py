@@ -10,14 +10,16 @@ def harmonic(n_terms):
 
 
 # Boas, 3rd Edition, Equation 1.13.4
-def boas_1_13_4(x: float, rel_tol: float = 1e-8, max_iter: int = 100) -> float:
-    """Compute the series of ln(1 + x)"""
+def boas_1_13_4(
+    x: float, rel_tol: float = 1e-8, max_iter: int = 100
+) -> tuple[float, int]:
+    """Compute the series of ln(1 + x)."""
     raise NotImplementedError("Student assignment not yet implemented.")
 
 
 # Boas, Problem 1.13.22
-def boas_1_13_22(x, rel_tol, max_iter):
-    """Compute the sum of the series exp(x)/(1 - x)"""
+def boas_1_13_22(x, rel_tol = 1e-8, max_iter = 100):
+    """Compute the sum of the series exp(x)/(1 - x)."""
     raise NotImplementedError("Student assignment not yet implemented.")
 
 
@@ -42,7 +44,7 @@ def boas_1_16_1c(n_books_overhang):
 # --- Landau --- #
 # The following questions are from Landau 3.3.1
 # HOWEVER, these should be completed with cos instead of sin
-def cos_apprx(x, rel_tol=1e-8, max_iter=100):
+def cos_apprx(x, rel_tol = 1e-8, max_iter = 100):
     """Compute the approximation of cos(x) using the Taylor series expansion.
 
     This function computes the Taylor series of cos(x) until the series converges
