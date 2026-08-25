@@ -19,8 +19,8 @@ Implement all stubs currently raising `NotImplementedError`.
 #### In `series.py`
 
 - `harmonic`: Implements the harmonic series up to $N$ terms.
-- `boas_1_13_4`: Implements $\ln(1+x)$ as a Taylor Series with a stopping criteria.
-- `boas_1_13_22`: Implements $\exp(x)/(1 - x)$ as a Taylor Series with a stopping criteria.
+- `boas_1_13_4`: Implements $\ln(1+x)$ as a Taylor Series with a stopping criteria (approximation and iterations should be returned).
+- `boas_1_13_22`: Implements $\exp(x)/(1 - x)$ as a Taylor Series with a stopping criteria (approximation and iterations should be returned).
 - `boas_1_13_22_plot`
   - Implements $f(x) = \exp(x)/(1 - x)$ as a Maclaurin Series up to a fixed number of terms $N$.
   - Plots the function $f(x)$ for $-5 < x < 5$ in black
@@ -31,6 +31,7 @@ Implement all stubs currently raising `NotImplementedError`.
   - Approximate $\cos$ (instead of $\sin$)
   - From Landau 3.3.1
   - Do Parts 1 and 7
+  - Return approximation and number of iterations
 
 #### In `complex.py`
 
