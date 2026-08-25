@@ -24,11 +24,13 @@ def boas_1_13_22(x, rel_tol = 1e-8, max_iter = 100):
 
 
 # Plots the first N terms of the series expansion of exp(x)/(1 - x)
-def boas_1_13_22_plot(n_terms):
+def boas_1_13_22_plot(n_terms, filename=None):
     """Plot the first N terms of the series expansion of exp(x)/(1 - x)
 
     This function generates a plot similar to the one in Boas, Figure 1.13.1
     (but with all N approximations on a single plot).
+
+    If filename is not None, save the generated figure to that filename.
 
     """
     raise NotImplementedError("Student assignment not yet implemented.")

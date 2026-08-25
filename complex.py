@@ -36,13 +36,15 @@ def complex_impedance(resistance, inductance, capacitance, omega):
 
 
 # See Boas Example 2.16 - Electricity
-def plot_rlc(resistance, inductance, capacitance, omega, time, max_current):
+def plot_rlc(resistance, inductance, capacitance, omega, time, max_current, filename=None):
     """Plot the current and voltage time series of a series RLC circuit.
 
     This function takes the resistance R, inductance L, capacitance C, angular frequencies
     omega, and time array and generates the voltage and current signal for the
-    series RLC circuit. The function also returns the voltage and current signals
-    as numpy arrays.
+    series RLC circuit. The function also returns the current (first) and voltage (second)
+    signals as numpy arrays.
+
+    If filename is not None, save the generated figure to that filename.
 
     """
     raise NotImplementedError("Student assignment not yet implemented.")

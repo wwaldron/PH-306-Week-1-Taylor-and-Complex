@@ -25,6 +25,8 @@ Implement all stubs currently raising `NotImplementedError`.
   - Implements $f(x) = \exp(x)/(1 - x)$ as a Maclaurin Series up to a fixed number of terms $N$.
   - Plots the function $f(x)$ for $-5 < x < 5$ in black
   - Plots the $N$ Maclaurin approximations or $f(x)$ using Matplotlib colors `C0, C1, ..., C<N-1>`.
+  - Accepts an optional `filename` argument with default `None`.
+  - If `filename` is not `None`, saves the figure to that file.
   - Returns the Matplotlib Figure and Axes objects to user.
   - Example/Comparison plot can be found on Canvas
 - `boas_1_16_1c`: Determines the number of books needed to get the necessary book-lengths of overhang. (See Boas 1.16.1c)
@@ -44,6 +46,8 @@ Implement all stubs currently raising `NotImplementedError`.
   - Should plot and return the imaginary part of the current/voltage.
   - Should be `astropy` quantity-friendly.
   - Should plot over six (current, not necessarily voltage) periods.
+  - Accepts an optional `filename` argument with default `None`.
+  - If `filename` is not `None`, saves the figure to that file.
   - Example/comparison plot on Canvas.
 
 ## Current Libraries

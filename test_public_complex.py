@@ -52,15 +52,15 @@ def test_nth_root_of_one_contains_expected_unit_roots():
         assert np.any(np.isclose(roots, target, rtol=1e-8, atol=1e-8))
 
 
-def test_complex_impedance_matches_series_rlc_formula():
-    """Impedance should match Z = R + i(omega*L - 1/(omega*C))."""
+def test_complex_impedance_matches_reference_value():
+    """Impedance should match an independently computed reference for this case."""
     resistance = 10.0
     inductance = 0.2
     capacitance = 1.0e-3
     omega = 50.0
 
     z = complex_module.complex_impedance(resistance, inductance, capacitance, omega)
-    expected = resistance + 1j * (omega * inductance - 1.0 / (omega * capacitance))
+    expected = 10.0 - 10.0j
     assert z == pytest.approx(expected, rel=1e-12, abs=1e-12)
 
 
@@ -79,7 +79,7 @@ def test_plot_rlc_returns_series_and_draws_plot():
 
     assert isinstance(result, tuple)
     assert len(result) == 2
-    voltage, current = result
+    current, voltage = result
     assert np.shape(voltage) == np.shape(time)
     assert np.shape(current) == np.shape(time)
 
@@ -104,7 +104,7 @@ def test_plot_rlc_accepts_astropy_quantities():
 
     assert isinstance(result, tuple)
     assert len(result) == 2
-    voltage, current = result
+    current, voltage = result
     assert np.shape(voltage) == np.shape(time)
     assert np.shape(current) == np.shape(time)
 
