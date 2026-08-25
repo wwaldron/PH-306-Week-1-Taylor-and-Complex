@@ -65,15 +65,15 @@ def test_boas_1_13_22_plot_creates_a_plot():
 
 def test_boas_1_16_1c_matches_harmonic_overhang_rule():
     """The stack problem uses the harmonic series to determine the minimum books."""
-    assert series.boas_1_16_1c(0.5) == 1
-    assert series.boas_1_16_1c(0.75) == 2
+    assert series.boas_1_16_1c(0.5) == 2
+    assert series.boas_1_16_1c(0.75) == 3
     assert series.boas_1_16_1c(1) >= 3
     assert series.boas_1_16_1c(2) == 32
     assert series.boas_1_16_1c(3) == 228
     assert series.boas_1_16_1c(10) >= 2.7e8
     assert series.boas_1_16_1c(10) <= 2.8e8
-    assert series.boas_1_16_1c(100) >= 4e86
-    assert series.boas_1_16_1c(100) <= 5e86
+    assert series.boas_1_16_1c(100) >= 4.0e86
+    assert series.boas_1_16_1c(100) <= 4.1e86
 
 
 def test_cos_apprx_matches_cosine_taylor_series():
