@@ -53,6 +53,8 @@ The currently guaranteed scientific libraries in CodeGrade are:
 - `pandas`
 - `numpy`
 - `scipy`
+- `scikit-learn`
+- `scikit-image`
 - `astropy`
 - `matplotlib`
 
