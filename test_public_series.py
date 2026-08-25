@@ -9,9 +9,15 @@ import series
 
 def test_harmonic_sums_first_terms():
     """The harmonic series should sum the first n reciprocal terms."""
-    assert series.harmonic(0) == pytest.approx(0.0)
     assert series.harmonic(1) == pytest.approx(1.0)
     assert series.harmonic(5) == pytest.approx(2.283333333333333)
+
+def test_harmonic_raises_value_error_for_non_positive_n_terms():
+    """The harmonic series should raise a ValueError for non-positive n_terms."""
+    with pytest.raises(ValueError):
+        series.harmonic(0)
+    with pytest.raises(ValueError):
+        series.harmonic(-5)
 
 
 def test_boas_1_13_4_matches_log1p():
