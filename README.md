@@ -19,6 +19,9 @@ Implement all stubs currently raising `NotImplementedError`.
 #### In `series.py`
 
 - `harmonic`: Implements the harmonic series up to $N$ terms.
+  - For High $N$, switch to asymptotic approximation (see below)
+    - [StackExchange](https://stackoverflow.com/questions/404346/python-program-to-calculate-harmonic-series): Note that some needed constants are in `scipy` and `numpy`
+    - [Wikipedia Calculation](https://en.wikipedia.org/wiki/Harmonic_number#Calculation) or [Wikipedia Application](https://en.wikipedia.org/wiki/Harmonic_number#Applications)
 - `boas_1_13_4`: Implements $\ln(1+x)$ as a Taylor Series with a stopping criteria (approximation and iterations should be returned).
 - `boas_1_13_22`: Implements $\exp(x)/(1 - x)$ as a Taylor Series with a stopping criteria (approximation and iterations should be returned).
 - `boas_1_13_22_plot`
@@ -30,6 +33,9 @@ Implement all stubs currently raising `NotImplementedError`.
   - Returns the Matplotlib Figure and Axes objects to user.
   - Example/Comparison plot can be found on Canvas
 - `boas_1_16_1c`: Determines the number of books needed to get the necessary book-lengths of overhang. (See Boas 1.16.1c)
+  - For High $N$, switch to asymptotic approximation (see below)
+    - [StackExchange](https://stackoverflow.com/questions/404346/python-program-to-calculate-harmonic-series): Note that some needed constants are in `scipy` and `numpy`
+    - [Wikipedia Calculation](https://en.wikipedia.org/wiki/Harmonic_number#Calculation) or [Wikipedia Application](https://en.wikipedia.org/wiki/Harmonic_number#Applications)
 - `cos_apprx`
   - Approximate $\cos$ (instead of $\sin$)
   - From Landau 3.3.1
