@@ -3,14 +3,14 @@
 This assignment has two coding parts:
 
 1. Infinite/Taylor series methods in `series.py`
-2. Complex-number methods in `complex.py`
+2. Complex-number methods in `complexmod.py`
 
 Implement the required functions in those two files. **Do not rename files or functions.**
 
 ## Files You Should Edit
 
 - `series.py`
-- `complex.py`
+- `complexmod.py`
 
 ### Required Functions
 
@@ -43,7 +43,7 @@ Implement all stubs currently raising `NotImplementedError`.
   - Do Parts 1 and 7
   - Return approximation and number of iterations
 
-#### In `complex.py`
+#### In `complexmod.py`
 
 - `complex_polar`: Converts a complex number $z = x+iy$ to polar form as a tuple $z = (r, \theta)$.
 - `nth_root`: Returns the $n$ roots of $z$ as a tuple ($z_1 = \sqrt[n]{z_0}$)
