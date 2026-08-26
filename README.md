@@ -27,7 +27,7 @@ Implement all stubs currently raising `NotImplementedError`.
 - `boas_1_13_22`: Implements $\exp(x)/(1 - x)$ as a Taylor Series with a stopping criteria (approximation and iterations should be returned). **Note:** Only expand the exponential.
 - `boas_1_13_22_plot`
   - Implements $f(x) = \exp(x)/(1 - x)$ as a Maclaurin Series up to a fixed number of terms $N$. **Note:** Only expand the exponential.
-  - Plots the function $f(x)$ for $-5 < x < 5$ in black
+  - Plots the function $f(x)$ for $-2 < x < 2$ in black
   - Plots the $N$ Maclaurin approximations or $f(x)$ using Matplotlib colors `C0, C1, ..., C<N-1>`.
   - Accepts an optional `filename` argument with default `None`.
   - If `filename` is not `None`, saves the figure to that file.
