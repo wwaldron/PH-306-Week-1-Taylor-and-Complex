@@ -23,9 +23,9 @@ Implement all stubs currently raising `NotImplementedError`.
     - [StackExchange](https://stackoverflow.com/questions/404346/python-program-to-calculate-harmonic-series): Note that some needed constants are in `scipy` and `numpy`
     - [Wikipedia Calculation](https://en.wikipedia.org/wiki/Harmonic_number#Calculation) or [Wikipedia Application](https://en.wikipedia.org/wiki/Harmonic_number#Applications)
 - `boas_1_13_4`: Implements $\ln(1+x)$ as a Taylor Series with a stopping criteria (approximation and iterations should be returned).
-- `boas_1_13_22`: Implements $\exp(x)/(1 - x)$ as a Taylor Series with a stopping criteria (approximation and iterations should be returned).
+- `boas_1_13_22`: Implements $\exp(x)/(1 - x)$ as a Taylor Series with a stopping criteria (approximation and iterations should be returned). **Note:** Only expand the exponential.
 - `boas_1_13_22_plot`
-  - Implements $f(x) = \exp(x)/(1 - x)$ as a Maclaurin Series up to a fixed number of terms $N$.
+  - Implements $f(x) = \exp(x)/(1 - x)$ as a Maclaurin Series up to a fixed number of terms $N$. **Note:** Only expand the exponential.
   - Plots the function $f(x)$ for $-5 < x < 5$ in black
   - Plots the $N$ Maclaurin approximations or $f(x)$ using Matplotlib colors `C0, C1, ..., C<N-1>`.
   - Accepts an optional `filename` argument with default `None`.
