@@ -1,6 +1,3 @@
-import importlib.util
-from pathlib import Path
-
 import astropy.units as u
 import matplotlib
 matplotlib.use("Agg")
