@@ -8,12 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pytest
 
-_complex_path = Path(__file__).with_name("complex.py")
-_complex_spec = importlib.util.spec_from_file_location("student_complex", _complex_path)
-if _complex_spec is None or _complex_spec.loader is None:
-    raise RuntimeError("Could not load complex.py for testing.")
-complex_module = importlib.util.module_from_spec(_complex_spec)
-_complex_spec.loader.exec_module(complex_module)
+import complexmod as complex_module
 
 
 def test_complex_polar_matches_expected_magnitude_and_angle():
