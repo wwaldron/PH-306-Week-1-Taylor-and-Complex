@@ -1,7 +1,7 @@
 import pytest
 from numpydoc.validate import validate
 
-import series, complex
+import series, complexmod
 
 
 DOCSTRING_TARGETS = [
@@ -11,10 +11,10 @@ DOCSTRING_TARGETS = [
     series.boas_1_16_1c,
     series.cos_apprx,
     series.harmonic,
-    complex.complex_impedance,
-    complex.complex_polar,
-    complex.nth_root,
-    complex.plot_rlc
+    complexmod.complex_impedance,
+    complexmod.complex_polar,
+    complexmod.nth_root,
+    complexmod.plot_rlc
 ]
 
 DOCSTRING_CHECKS = {
