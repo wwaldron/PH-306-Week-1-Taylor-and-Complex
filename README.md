@@ -22,6 +22,7 @@ Implement all stubs currently raising `NotImplementedError`.
   - For High $N$, switch to asymptotic approximation (see below)
     - [StackExchange](https://stackoverflow.com/questions/404346/python-program-to-calculate-harmonic-series): Note that some needed constants are in `scipy` and `numpy`
     - [Wikipedia Calculation](https://en.wikipedia.org/wiki/Harmonic_number#Calculation) or [Wikipedia Application](https://en.wikipedia.org/wiki/Harmonic_number#Applications)
+    - Will check up to $N = 10^{100}$
 - `boas_1_13_4`: Implements $\ln(1+x)$ as a Taylor Series with a stopping criteria (approximation and iterations should be returned).
 - `boas_1_13_22`: Implements $\exp(x)/(1 - x)$ as a Taylor Series with a stopping criteria (approximation and iterations should be returned). **Note:** Only expand the exponential.
 - `boas_1_13_22_plot`
