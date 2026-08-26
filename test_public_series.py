@@ -11,6 +11,7 @@ def test_harmonic_sums_first_terms():
     """The harmonic series should sum the first n reciprocal terms."""
     assert series.harmonic(1) == pytest.approx(1.0)
     assert series.harmonic(5) == pytest.approx(2.283333333333333)
+    assert series.harmonic(1e100) == pytest.approx(230.836)
 
 def test_harmonic_raises_value_error_for_non_positive_n_terms():
     """The harmonic series should raise a ValueError for non-positive n_terms."""
